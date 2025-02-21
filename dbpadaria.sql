@@ -99,7 +99,11 @@ desc tbProdutos;
 insert into tbClientes(nome,cpf,email) values('Davi Tures', '123.456.789-99', 'davitures@gmail.com');
 insert into tbClientes(nome,cpf,email) values('Filippie Zass', '214.144.144-99', 'filippiezass@gmail.com');
 insert into tbFornecedores(nome,email,telCel) values('Kappa Frutas','kappafrutas@tutamail.com','914916950');
+insert into tbFornecedores(nome,email,telCel) values('Carlos Almeida','carlos.almeida@email.com','912356950');
 insert into tbFuncionarios(nome,email,telCel,dataNasc,salario,sexo) values('Rodrigo Silva','rodrigos@proton.com','927471128','1995-03-22',1500.05,'M');
+insert into tbFuncionarios(nome,email,telCel,dataNasc,salario,sexo) values('Fernanda Paes','fernandapaes@zoton.com','963171128','2004-03-22',2500.05,'F');
+insert into tbUsuarios(nome,senha,codFunc) values('Rodrigo Silva','123456',1);
+insert into tbUsuarios(nome,senha,codFunc) values('Fernanda Paes','123457',2);
 
 --visualizando os registros nas tabelas
 
