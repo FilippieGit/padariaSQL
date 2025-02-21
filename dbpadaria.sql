@@ -50,6 +50,7 @@ quantidade int,
 preco decimal(9,2),
 dataVal datetime,
 lote char(10),
+codForn int not null,
 primary key(codProd),
 foreign key(codForn)references tbFornecedores(codForn)
 );
