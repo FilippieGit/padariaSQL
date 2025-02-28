@@ -98,15 +98,31 @@ desc tbProdutos;
 
 insert into tbClientes(nome,cpf,email) values('Davi Tures', '123.456.789-99', 'davitures@gmail.com');
 insert into tbClientes(nome,cpf,email) values('Filippie Zass', '214.144.144-99', 'filippiezass@gmail.com');
+
 insert into tbFornecedores(nome,email,telCel) values('Kappa Frutas','kappafrutas@tutamail.com','914916950');
 insert into tbFornecedores(nome,email,telCel) values('Carlos Almeida','carlos.almeida@email.com','912356950');
+
 insert into tbFuncionarios(nome,email,telCel,dataNasc,salario,sexo) values('Rodrigo Silva','rodrigos@proton.com','927471128','1995-03-22',1500.05,'M');
 insert into tbFuncionarios(nome,email,telCel,dataNasc,salario,sexo) values('Fernanda Paes','fernandapaes@zoton.com','963171128','2004-03-22',2500.05,'F');
+
 insert into tbUsuarios(nome,senha,codFunc) values('Rodrigo Silva','123456',1);
 insert into tbUsuarios(nome,senha,codFunc) values('Fernanda Paes','123457',2);
+
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Banana Nanica',100,3.50,'2025-03-06','A381935B',1);
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Mamao Papaya',50,9.50,'2025-03-06','H4OS04KL',1);
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Manga',50,4.50,'2025-03-06','ASTV84L1',1);
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Pinha',50,10.05,'2025-03-06','S5A9W82X',1);
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Abacaxi',50,4.50,'2025-03-06','VS6A598F',1);
+insert into tbProdutos(descricao,quantidade,preco,dataVal,lote,codForn) values ('Pao Frances',30,2.00,'2025-03-06','AW89TS61',2);
+
+insert into tbVendas(dataVend, horaVend, quanVend, valVend, codProd, codusu, codCli) values ('2025-02-27', '21:31:25', 10, 50.35,2,1,2);
+insert into tbVendas(dataVend, horaVend, quanVend, valVend, codProd, codusu, codCli) values ('2025-01-18', '09:39:45', 25, 12.66,2,2,1);
+insert into tbVendas(dataVend, horaVend, quanVend, valVend, codProd, codusu, codCli) values ('2025-01-09', '13:41:19', 7, 8.4,2,1,2);
 
 --visualizando os registros nas tabelas
 
 Select * from tbClientes;
 Select * from tbFornecedores;
 select * from tbFuncionarios;
+select * from tbProdutos;
+select * from tbVendas;
